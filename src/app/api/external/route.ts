@@ -19,11 +19,11 @@ export async function GET() {
         ...post,
         imageUrl: randomImage.url,
       };
-    });
+    }); 
 
     // Returning posts with image URLs
     return NextResponse.json(postsWithImages);
   } catch (error) {
     return NextResponse.json({ error: 'Failed to fetch posts and images' }, { status: 500 });
   }
-}
+} 

@@ -9,7 +9,7 @@ interface Post {
   title: string;
   body: string;
   imageUrl: string;
-}
+} 
 
 const FetchPosts = () => {
   const [posts, setPosts] = useState<Post[]>([]);
